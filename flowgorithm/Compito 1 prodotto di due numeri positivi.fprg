@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Compito 1 prodotto di due numeri positivi"/>
+        <attribute name="authors" value="UTENTE"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-12-01 03:58:50 "/>
+        <attribute name="created" value="VVRFTlRFO0RFU0tUT1AtOUc4MUk2OTsyMDI1LTEyLTAxOyIwMzoyOToyNyAiOzI2NjA="/>
+        <attribute name="edited" value="VVRFTlRFO0RFU0tUT1AtOUc4MUk2OTsyMDI1LTEyLTAxOyIwMzo1ODo1MCAiOzI7Mjc2Nw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, m, i, sum, s" type="Integer" array="False" size=""/>
+            <assign variable="sum" expression="0"/>
+            <output expression="&quot;Inserire 1 per fare il prodotto di due numeri, inserire 0 per terminare il programma&quot;" newline="True"/>
+            <input variable="s"/>
+            <if expression="s=0">
+                <then>
+                    <output expression="&quot;Fine programma&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Inserire il primo numero&quot;" newline="True"/>
+                    <input variable="n"/>
+                    <while expression="n&lt;0">
+                        <output expression="&quot;Numero errsto, inserire un numero positivo&quot;" newline="True"/>
+                        <input variable="n"/>
+                    </while>
+                    <output expression="&quot;Inserire il secondo numero&quot;" newline="True"/>
+                    <input variable="m"/>
+                    <while expression="m&lt;0">
+                        <output expression="&quot;Numero errato, inserire un numero positivo&quot;" newline="True"/>
+                        <input variable="m"/>
+                    </while>
+                    <for variable="i" start="1" end="m" direction="inc" step="1">
+                        <assign variable="sum" expression="sum+n"/>
+                    </for>
+                    <output expression="&quot;Il prodotto dei due numeri &#232;: &quot; &amp; sum" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

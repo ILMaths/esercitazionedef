@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Compito 3 maggiorenne o minorenne"/>
+        <attribute name="authors" value="UTENTE"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-12-01 04:19:43 "/>
+        <attribute name="created" value="VVRFTlRFO0RFU0tUT1AtOUc4MUk2OTsyMDI1LTEyLTAxOyIwNDowOToyMiAiOzI2NTQ="/>
+        <attribute name="edited" value="VVRFTlRFO0RFU0tUT1AtOUc4MUk2OTsyMDI1LTEyLTAxOyIwNDoxOTo0MyAiOzE7Mjc2Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="e" type="Integer" array="False" size=""/>
+            <output expression="&quot;Inserire la propria et&#224;&quot;" newline="True"/>
+            <input variable="e"/>
+            <if expression="e&gt;=18">
+                <then>
+                    <if expression="e&lt;0 or e&gt;120">
+                        <then>
+                            <output expression="&quot;L'eta inserita &#232; falsa&quot;" newline="True"/>
+                            <output expression="&quot;Inserire l'et&#224; vera&quot;" newline="True"/>
+                            <input variable="e"/>
+                            <while expression="e&lt;0 or e&gt;120">
+                                <output expression="&quot;L'eta inserita &#232; falsa&quot;" newline="True"/>
+                                <output expression="&quot;Inserire l'et&#224; vera&quot;" newline="True"/>
+                                <input variable="e"/>
+                            </while>
+                            <if expression="e&gt;=18">
+                                <then>
+                                    <output expression="&quot;Sei maggiorenne&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Sei minorenne&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <output expression="&quot;Sei maggiorenne&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="e&lt;0 or e&gt;120">
+                        <then>
+                            <output expression="&quot;L'eta inserita &#232; falsa&quot;" newline="True"/>
+                            <output expression="&quot;Inserire l'et&#224; vera&quot;" newline="True"/>
+                            <input variable="e"/>
+                            <while expression="e&lt;0 or e&gt;120">
+                                <output expression="&quot;L'eta inserita &#232; falsa&quot;" newline="True"/>
+                                <output expression="&quot;Inserire l'et&#224; vera&quot;" newline="True"/>
+                                <input variable="e"/>
+                            </while>
+                            <if expression="e&gt;=18">
+                                <then>
+                                    <output expression="&quot;Sei maggiorenne&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Sei minorenne&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <output expression="&quot;Sei minorenne&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

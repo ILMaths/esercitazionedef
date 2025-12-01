@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Compito 2 somma dei numeri pari"/>
+        <attribute name="authors" value="UTENTE"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-12-01 04:08:32 "/>
+        <attribute name="created" value="VVRFTlRFO0RFU0tUT1AtOUc4MUk2OTsyMDI1LTEyLTAxOyIwMzo1OTowOCAiOzI2NjI="/>
+        <attribute name="edited" value="VVRFTlRFO0RFU0tUT1AtOUc4MUk2OTsyMDI1LTEyLTAxOyIwNDowODozMiAiOzE7Mjc2Mg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, s, sum" type="Integer" array="False" size=""/>
+            <assign variable="sum" expression="0"/>
+            <output expression="&quot;Inserire 1 per fare la somma dei numeri, inserire 0 per terminare il programma&quot;" newline="True"/>
+            <input variable="s"/>
+            <if expression="s=0">
+                <then>
+                    <output expression="&quot;Fine programma&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Inserire il numero,0 per finire&quot;" newline="True"/>
+                    <input variable="n"/>
+                    <while expression="n!=0">
+                        <if expression="n%2==0">
+                            <then>
+                                <assign variable="sum" expression="sum+n"/>
+                            </then>
+                            <else>
+                                <assign variable="sum" expression="sum+0"/>
+                            </else>
+                        </if>
+                        <output expression="&quot;Inserire un numero, 0 per finire&quot;" newline="True"/>
+                        <input variable="n"/>
+                    </while>
+                    <output expression="&quot;La somma dei numeri inseriti (contando solo quelli pari) &#232;: &quot; &amp; sum" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
